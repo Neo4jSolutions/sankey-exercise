@@ -1,4 +1,4 @@
-# Neo4j Solutions Sankey Chart Excercise
+# Neo4j Solutions Sankey Chart Exercise
 
 This repository contains a functioning React web app that displays a sankey chart.
 
