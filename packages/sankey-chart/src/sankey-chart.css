@@ -1,0 +1,6 @@
+/* This is where you can include any css you want to use for the exercise */
+.sankey-chart-wrapper {
+  margin: 4px;
+  padding: 4px;
+  border: 1px solid blue;
+}

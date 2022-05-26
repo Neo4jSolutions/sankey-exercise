@@ -1,0 +1,33 @@
+{
+  "name": "sankey-exercise",
+  "description": "sankey chart coding exercise",
+  "repository": "https://github.com/Neo4jSolutions/sankey-exercise.git",
+  "author": "neo4j",
+  "license": "NONE",
+  "private": true,
+  "devDependencies": {
+		"@babel/cli": "^7.17.10",
+		"@babel/core": "^7.17.10",
+		"@babel/plugin-proposal-class-properties": "^7.16.7",
+		"@babel/plugin-proposal-object-rest-spread": "^7.17.3",
+		"@babel/plugin-transform-react-display-name": "^7.16.7",
+    "@babel/plugin-transform-react-jsx": "^7.17.3",
+		"@babel/plugin-transform-runtime": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+		"cross-env": "^7.0.3",
+		"lerna": "^4.0.0",
+		"rimraf": "^3.0.2"
+	},
+	"workspaces": [
+		"packages/*"
+	],
+  "scripts": {
+		"clean": "rimraf packages/*/node_modules rimraf node_modules",
+		"lerna": "lerna",
+		"build": "lerna run build",
+		"prepublishOnly": "lerna run build",
+		"start": "lerna run startLocal --scope sankey-chart-demo --stream"
+	}
+}
+

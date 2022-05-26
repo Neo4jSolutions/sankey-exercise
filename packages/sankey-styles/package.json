@@ -1,0 +1,23 @@
+{
+  "name": "sankey-styles",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "lib/sankey-styles.js",
+  "module": "es/sankey-styles.js",
+  "peerDependencies": {
+    "react": ">=16.0.0"
+  },
+  "devDependencies": {
+    "react": "^16.14.0"
+  },
+  "scripts": {
+    "build-lib": "babel --config-file ../../babel.config.js --extensions \".ts,.tsx,.js,.jsx\" --ignore '**/*.test.ts' --out-dir lib ./src",
+    "build-es": "cross-env ES=true babel --config-file ../../babel.config.js --extensions \".ts,.tsx,.js,.jsx\" --ignore '**/*.test.ts' --out-dir es ./src",
+    "build": "npm run build-lib && npm run build-es",
+    "build-clean": "rimraf lib && rimraf es"
+  },
+  "files": [
+    "lib",
+    "es"
+  ]
+}
