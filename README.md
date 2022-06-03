@@ -48,6 +48,18 @@ You can use CSS, JavaScript (including npm packages) to implement the styling, b
 
 You can make changes to the options passed to the sankey chart itself if you wish, and for bonus points you could even try swapping out react-google-charts for some other charting library.
 
+### Dashboard Task
+
+The React demo app currently renders only a single sankey chart component.
+
+Let's create a dashboard component that will render two sankey charts, each with their own, possibly different title, theme & data.
+
+There are no constraints on how the two charts should be displayed in the dashboard except that it should be possible to view them both at the same time in a way that best shows the content to the user.
+
+Since we will need a second url to load the data for the second chart, you can use `http://localhost:8585/data/sankey-data-2.json` or place your own file in the `/packages/sankey-chart-demo/data` directory and use `http://localhost:8585/data/<your-filename-here>`.
+
+For bonus points, you can even use some arbitrary external url of your choice to load the data for one or both of the charts.
+
 ### Submitting Your Solution
 
 Your solution to the exercise should be runnable with the steps outlined above.
